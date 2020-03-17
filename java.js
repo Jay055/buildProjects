@@ -632,9 +632,9 @@ Beginning of Section 2
         EXECUTION CONTEXTS AND THE EXECUTION STACK
 Execution Context: A box,container which a piece of our code is evaluated and executed.
 The Default is the Global Execution Context.
-    Code that is not inside any function 
+    Codes that aren't inside any function 
     Associated with the global object 
-    In the browser, that's the window object
+    In the browser it's called the window object
     lastName === window.lastName... that's the same global value 
 
 Creating 
@@ -715,10 +715,12 @@ function first() {
     second();
     function second() {
         var c = 'Hey!';
-        console.log(a + b + c);
+        console.log(a +  " " + b + c);
     }
 }
+*/
 // Example to show the differece between execution stack and scope chain
+/*
 var a = 'Hello!';
 first();
 function first() {
@@ -734,6 +736,7 @@ function third() {
     //console.log(c);
     console.log(a+d);
 }
+
 */
 
 
@@ -741,14 +744,16 @@ function third() {
 /////////////////////////////////////
 // Lecture: The this keyword
 /* Syntax Parser: 
+A program which reads your codes and determines if it's grammar is valid. 
+
 A program that reads your code and determines what it does and if its grammer 
-is valid. : Your code isn't magin. Someone else wrote a program to translate if 
+is valid. : Your code isn't magic. Someone else wrote a program to translate if 
 for the computer. The Programs are called compliers. 
 Your code would actually be translated to what the computer can read. (Binary Codes)
 
 
 Lexical Environment: 
-Where something sits physicall in the code you write.
+Where something sits physical in the code you write.
 
 EXECUTION CONTEXT: 
 A wrapper to help manage the code that is running. There are lots of lexical environments. 
@@ -921,7 +926,7 @@ this keyword is not assigned a value until a functon where it is defined is call
 //console.log(this);
 
 
-
+/*
 
 var john = {
     name: 'John',
@@ -947,7 +952,7 @@ john.calculateAge();
 // The this variable is going to be the John object that is calling the method 
 // for the 
 
-
+*/F
 
 
 
@@ -1002,12 +1007,9 @@ mike.calculateAge();
 
 
 
-
-
-
 //SCOPING 
 /*   
-two types of scope:
+Two types of scope.
 
 Local scope - decalared within a javascript function
 Global scope - declared outside a function
