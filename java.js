@@ -632,9 +632,9 @@ Beginning of Section 2
         EXECUTION CONTEXTS AND THE EXECUTION STACK
 Execution Context: A box,container which a piece of our code is evaluated and executed.
 The Default is the Global Execution Context.
-    Code that is not inside any function 
+    Codes that aren't inside any function 
     Associated with the global object 
-    In the browser, that's the window object
+    In the browser it's called the window object
     lastName === window.lastName... that's the same global value 
 
 Creating 
@@ -715,9 +715,10 @@ function first() {
     second();
     function second() {
         var c = 'Hey!';
-        console.log(a + b + c);
+        console.log(a +  " " + b + c);
     }
 }
+*/
 // Example to show the differece between execution stack and scope chain
 var a = 'Hello!';
 first();
@@ -734,7 +735,7 @@ function third() {
     //console.log(c);
     console.log(a+d);
 }
-*/
+
 
 
 
@@ -921,7 +922,7 @@ this keyword is not assigned a value until a functon where it is defined is call
 //console.log(this);
 
 
-
+/*
 
 var john = {
     name: 'John',
@@ -947,7 +948,7 @@ john.calculateAge();
 // The this variable is going to be the John object that is calling the method 
 // for the 
 
-
+*/F
 
 
 
@@ -1002,12 +1003,9 @@ mike.calculateAge();
 
 
 
-
-
-
 //SCOPING 
 /*   
-two types of scope:
+Two types of scope.
 
 Local scope - decalared within a javascript function
 Global scope - declared outside a function
