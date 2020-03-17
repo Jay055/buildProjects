@@ -744,13 +744,9 @@ function third() {
 /////////////////////////////////////
 // Lecture: The this keyword
 /* Syntax Parser: 
-A program which reads your codes and determines if it's grammar is valid. 
-
-A program that reads your code and determines what it does and if its grammer 
-is valid. : Your code isn't magic. Someone else wrote a program to translate if 
-for the computer. The Programs are called compliers. 
-Your code would actually be translated to what the computer can read. (Binary Codes)
-
+A program which reads your codes to determine if it's grammer is valid. 
+The computer needs to understand your code and it's the compliers that convert our human language to the 
+computers binary codes.
 
 Lexical Environment: 
 Where something sits physical in the code you write.
