@@ -720,6 +720,7 @@ function first() {
 }
 */
 // Example to show the differece between execution stack and scope chain
+/*
 var a = 'Hello!';
 first();
 function first() {
@@ -736,20 +737,23 @@ function third() {
     console.log(a+d);
 }
 
+*/
 
 
 
 /////////////////////////////////////
 // Lecture: The this keyword
 /* Syntax Parser: 
+A program which reads your codes and determines if it's grammar is valid. 
+
 A program that reads your code and determines what it does and if its grammer 
-is valid. : Your code isn't magin. Someone else wrote a program to translate if 
+is valid. : Your code isn't magic. Someone else wrote a program to translate if 
 for the computer. The Programs are called compliers. 
 Your code would actually be translated to what the computer can read. (Binary Codes)
 
 
 Lexical Environment: 
-Where something sits physicall in the code you write.
+Where something sits physical in the code you write.
 
 EXECUTION CONTEXT: 
 A wrapper to help manage the code that is running. There are lots of lexical environments. 
